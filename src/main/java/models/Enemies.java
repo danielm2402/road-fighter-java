@@ -33,8 +33,9 @@ public class Enemies {
             Random rand = new Random();
             int x = rand.nextInt((408 - 166) + 1) + 166;
             int y = rand.nextInt((400 - 0) + 1) + 0;
+            int img = rand.nextInt((1 - 0) + 1) + 0;
             timeRespawn = true;
-            Enemy car = new Enemy(x, -y);
+            Enemy car = new Enemy(x, -y, img);
             enemiesList.add(car);
         }
         if (timeRespawn) {

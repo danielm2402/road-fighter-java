@@ -6,6 +6,7 @@ package models;
 
 import static control.Globales.BLUE_CAR;
 import static control.Globales.CAR_IMG;
+import static control.Globales.ENEMIES;
 import java.awt.Image;
 
 /**
@@ -22,9 +23,10 @@ public class Enemy {
     private double MaximumSpeed = 15;
     private boolean overtake = false;
 
-    public Enemy(double x, double y) {
+    public Enemy(double x, double y, int img) {
         this.x = x;
         this.y = y;
+        this.carImage = new javax.swing.ImageIcon(ENEMIES[img]).getImage();
     }
 
     public boolean isOvertake() {

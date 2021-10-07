@@ -26,5 +26,13 @@ public interface Globales {
     public final String HOUSE_IMG = "src/images/home.png";
     public final String CRASH_CAR = "src/images/boom.png";
     public final String BLUE_CAR = "src/images/bluecar.png";
+    public final String YELLOW_CAR = "src/images/yellowcar.png";
+    public static final String[] ENEMIES = {
+        BLUE_CAR,
+        YELLOW_CAR,};
+
+    public final String CAR_SOUND = "src/sounds/run.wav";
+    public final String CAR_CRASH_SOUND = "src/sounds/crash.wav";
+    public final String CAR_DRIFT_SOUND = "src/sounds/drift.wav";
 
 }
